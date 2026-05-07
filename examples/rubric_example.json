@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "name": "Mathematical Accuracy",
+      "description": "Correct formulation of the gradient descent update rule: θ = θ - α∇L(θ). Proper use of gradient, learning rate, and parameter notation.",
+      "max_score": 40
+    },
+    {
+      "name": "Conceptual Understanding",
+      "description": "Demonstrates understanding of WHY gradient descent works — moving in the direction that decreases the loss. Understands the role of the learning rate.",
+      "max_score": 30
+    },
+    {
+      "name": "Completeness",
+      "description": "Covers the key aspects: update rule, convergence, learning rate effects (too large / too small). Mentions local vs global minima for non-convex functions.",
+      "max_score": 20
+    },
+    {
+      "name": "Clarity",
+      "description": "The explanation is organized and easy to follow. Concepts are introduced in a logical order.",
+      "max_score": 10
+    }
+  ]
+}

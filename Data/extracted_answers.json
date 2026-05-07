@@ -1,0 +1,502 @@
+[
+  {
+    "student_name": "Roni Lipinsky",
+    "student_id": "207385816",
+    "score": 94,
+    "review": "שאלה 1: 19/25   סעיף א': השתמשת במה שרצו להוכיח, יש להשתמש בכך שP(XY)=P(X)P(Y) ומשם להמשיך (-4).   סעיף ד': יש לספק יותר הסברים / הצדקה למעברים, בפרט מדוע ניתן להחליף את הסדר של מכפלת הוקטורים (כפל הוקטורים הוא סקאלר) (-2)      שאלה 2: 25/25שאלה 3: 25/25   שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X and Y be two independent random variables. This means: E[XY] = E[X]E[Y]. The covariance of X and Y is given by Cov(X,Y) = E[XY] − E[X]E[Y]. Therefore, Cov(X,Y) = E[XY] − E[X]E[Y] = E[X]E[Y] − E[X]E[Y] = 0."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X be a standard normal random variable, and let Y = X^2. E[X] = 0 and E[Y] = E[X^2] = 1. Cov(X,Y) = E[XY] − E[X]E[Y] = E[X^3] − 0⋅1 = 0 (since E[X^3]=0 for a standard normal distribution). X and Y are uncorrelated, but they are not independent because Y is completely determined by X."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X, Y, and Z be random variables defined as follows: Let A, B be independent fair coin flips taking values in {0,1}, and define: X = A, Y = B and Z = A ⊕ B. Each pair (X,Y), (X,Z), and (Y,Z) is independent. But: X = Z ⊕ Y, Y = Z ⊕ X, Z = X ⊕ Y. Any one variable can be determined from the other two."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let z ∈ R^d be any vector. z^T C z = z^T (∑_{i=1}^n x_i x_i^T) z = ∑ z^T x_i x_i^T z = ∑ (x_i^T z)^2. Each term (x_i^T z)^2 ≥ 0 ⇒ sum is non-negative."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. P(|X| ≤ 1) = P(−1 ≤ X ≤ 1). CDF at X=1 is Φ(1)=0.8413 and at X=-1 is Φ(−1)=0.1587. Thus P(−1 ≤ X ≤ 1) = 0.8413−0.1587 = 0.6826. B. ||X||^2 follows a chi-squared distribution with d degrees of freedom. E[||X||^2]=d, Var[||X||^2]=2d. As d→∞, using the CDF of chi-squared distribution: lim_{d→∞} P(||X||^2 ≤ 1) = 0 ⇒ lim_{d→∞} P(||X|| ≤ 1) = 0."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let y = w^T X where w is a constant vector. E[y] = w^T E[X]. Let μ=E[X], then: Var(y) = E[(y−E[y])^2] = E[(w^T(X−μ))^2] = E[w^T(X−μ)(X−μ)^T w] = w^T E[(X−μ)(X−μ)^T] w = w^T C w."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. Case 1: w^T x ≥ 1, f(w,x)=0 — constant, differentiable everywhere in this region. Case 2: w^T x < 1, f(w,x)=1−w^T x — linear, differentiable everywhere. Case 3: at boundary w^T x=1 — not differentiable. Conclusion: differentiable at R^d\\{x ∈ R^d: w^T x=1}. Gradient: 0 if w^T x ≥ 1; −w if w^T x < 1. B. Differentiable at R^d (composition of differentiable functions). Let z=w^T x, f(x)=h(z)=1/(1+e^{-z}). dh/dz = h(z)(1−h(z)). By chain rule: ∇f(x) = f(x)(1−f(x))·w."
+      }
+    }
+  },
+  {
+    "student_name": "Adam Aharony",
+    "student_id": "",
+    "score": 97,
+    "review": "שאלה 1: 25/25   סעיף א': יש להתייחס למקרה הבדיד   שאלה 2: 25/25   שאלה 3: 25/25   שאלה 5: 22/25 לא מצויין תחום דפרנציאבליות -3",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Since X; Y are independent, we have f_{X;Y}(x;y) = f_X(x)·f_Y(y). E[XY] = ∬xyf_{X;Y}(x;y)dxdy = ∫∫xyf_X(x)f_Y(y)dxdy = ∫xf_X(x)dx ∫yf_Y(y)dy = E[X]E[Y]."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X be uniformly distributed on [−1,1], and define Y = X^2. E[X]=0, E[XY]=E[X·X^2]=E[X^3]=0. Therefore cov(X;Y) = E[XY]−E[X]E[Y] = 0. Even though X; Y are uncorrelated, they are clearly dependent since Y = X^2."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X; Y be independent with P(X=0)=P(X=1)=1/2 and P(Y=0)=P(Y=1)=1/2. Define Z=(X+Y) mod 2. P(X=x;Z=z)=1/4=P(X=x)P(Z=z), so X;Z are independent. Similarly Y;Z are independent. Knowing X;Y determines Z=(X+Y) mod 2. Knowing X;Z determines Y=(X+Z) mod 2. Knowing Y;Z determines X=(Y+Z) mod 2."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "z^T Cz = z^T(∑_{i=1}^n x_i x_i^T)z = ∑_{i=1}^n z^T(x_i x_i^T)z = ∑_{i=1}^n (z^T x_i)(x_i^T z). Recognising that z^T x_i is a scalar (equal to its transpose), (z^T x_i)(x_i^T z) = (x_i^T z)^2. Therefore z^T Cz = ∑_{i=1}^n (x_i^T z)^2 ≥ 0."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. P(−1 ≤ X ≤ 1) = Φ(1)−Φ(−1) = 2Φ(1)−1 ≈ 2·0.8413−1 ≈ 0.6826. B. Unit sphere in R^d is contained within the hyper-cube [−1,1]^d, so P(||X|| ≤ 1) ≤ P(X ∈ [−1,1]^d). Since components are independent: P(X ∈ [−1,1]^d) = ∏_{i=1}^d P(|X_i| ≤ 1) = (0.6826)^d. Since 0.6826 < 1, this → 0 as d→∞."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let μ=E[X]. E[y]=w^T E[X]=w^T μ. V[y]=E[(y−E[y])^2]=E[(w^T(X−μ))^2]. Note (w^T(X−μ))^2 = w^T(X−μ)(X−μ)^T w. Taking expectations: V[y]=w^T E[(X−μ)(X−μ)^T]w. By definition C=E[(X−μ)(X−μ)^T], thus V[y]=w^T Cw."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. Region w^T x > 1: f(x)=0, differentiable, gradient=0. Region w^T x < 1: f(x)=1−w^T x, gradient=−w. Boundary w^T x=1: not differentiable (limit of gradient from left is −w, from right is 0; coincide iff w=0). ∇f(x) = {−w if w^T x < 1; 0 if w^T x > 1; not differentiable if w^T x=1}. B. f(x)=1/(1+exp(−w^T x)). Differentiable everywhere. Let t=w^T x: ∇f(t)=f(t)(1−f(t)). By chain rule: ∇f(x)=f(x)(1−f(x))·w."
+      }
+    }
+  },
+  {
+    "student_name": "Adam Gavriely",
+    "student_id": "309677284",
+    "score": 100,
+    "review": "שאלה 1: 25/25   שאלה 2: 25/25שאלה 3: 25/25שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Case 1 (discrete): E[XY]=∑_x ∑_y xy·P(X=x,Y=y)=∑_x ∑_y xy·P(X=x)P(Y=y)=∑_x xP(X=x) ∑_y yP(Y=y)=E[X]E[Y]. Case 2 (continuous): E[XY]=∫∫xyfXY(x,y)dxdy=∫∫xyfX(x)fY(y)dxdy=∫xfX(x)dx ∫yfY(y)dy=E[X]E[Y]."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "X ~ U(−1,1) and Y = X^2. Clearly not independent since knowing X determines Y. E[X]=0, E[Y]=1/3, E[XY]=E[X^3]=1/2·∫_{-1}^{1}x^3 dx=0. E[X]E[Y]=0=E[XY], so they are uncorrelated."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "X ~ Bernoulli(0.5), Y ~ Bernoulli(0.5), Z = X ⊕ Y. X and Y are independent by definition. X,Z (and similarly Y,Z) are independent because knowing one does not give any information on the other as it could be any value with equal probability. Any variable can be completely determined from the other two using XOR."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "z^T Cz = z^T(∑_{i=1}^n x_i x_i^T)z = ∑_{i=1}^n z^T x_i x_i^T z = ∑_{i=1}^n (z^T x_i)(x_i^T z). Since z^T x_i is a scalar, z^T x_i = (z^T x_i)^T = x_i^T z, so z^T Cz = ∑_{i=1}^n (x_i^T z)^2 ≥ 0."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. For d=1: P(−1 ≤ X ≤ 1) = 2CDF(1)−1 ≈ 0.6826. B. The d-dimensional unit sphere is contained within a d-dimensional cube [−1,1]^d: P(||X|| ≤ 1) ≤ P(∀i X_i ∈ [−1,1]) = ∏_{i=1}^d P(X_i ∈ [−1,1]) = 0.6826^d. Since 0.6826 < 1, lim_{d→∞} 0.6826^d = 0, so P(||X|| ≤ 1) → 0."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Var(y) = E[(y−E[y])^2] = E[(w^T X − E[w^T X])(w^T X − E[w^T X])^T] = E[(w^T X − w^T E[X])(X^T w − E[X]^T w)] = E[w^T(X−E[X])(X^T−E[X]^T)w] = w^T E[(X−E[X])(X−E[X])^T]w = w^T Cw."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. For w=0: f(w,x)=1 for all x, differentiable everywhere, ∇_x f=0. For w≠0: differentiable at {x ∈ R^d | w^T x ≠ 1}. Gradient: ∇_x f={0 if w^T x > 1; −w if w^T x < 1}. B. Composition of elementary functions, differentiable at any x ∈ R. ∂f/∂x = we^{−w^T x}/(1+e^{−w^T x})^2 = f(x)(1−f(x))w, since 1−f(x)=e^{−w^T x}/(1+e^{−w^T x})."
+      }
+    }
+  },
+  {
+    "student_name": "Adam Sendler",
+    "student_id": "329497770",
+    "score": 96,
+    "review": "שאלה 1: 23/25   סעיף ד': יש לספק יותר הסברים / הצדקה למעברים, בפרט מדוע ניתן להחליף את הסדר של מכפלת הוקטורים (כפל הוקטורים הוא סקאלר) (-2)   שאלה 2: 25/25שאלה 3: 23/25 - יש לפרט יותר על המעברים.   שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "מקרה בדיד: E[XY] = ∑_{x∈Ω1,y∈Ω2} xy · P(X=x ∧ Y=y) = ∑_{x∈Ω1,y∈Ω2} xy · P(X=x) · P(Y=y) = ∑_{x∈Ω1} x · P(X=x) · E[Y] = E[X] · E[Y]. מקרה רציף: E[XY] = ∫_{R^2} xy · fXY(x,y) d(x,y) = ∫∫ xy · fX(x)fY(y) dx dy = ∫ x · fX(x) · E[Y] d = E[X] · E[Y]."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "נגדיר X ∼ N(0,1), Y = X^2. נשים לב ששניהם תלויים, אך נקבל: Cov(X, X^2) = E[X^3] − E[X]E[X^2] = 0 − 0 = 0. כלומר הם בלתי מתואמים."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "יהיו Y, X משתנים מקריים בלתי תלויים המייצגים הטלת מטבע (P(X=0)=P(X=1)=P(Y=0)=P(Y=1)=1/2). נגדיר משתנה שלישי: Z = X ⊕ Y. נראה ש-Z בלתי תלוי ב-X, Y: P(Z=0, X=0) = 1/2·(P(X⊕1=0, X=0|Y=1) + P(X⊕0=0, X=0|Y=0)) = 1/2·(0 + 1/2) = 1/4 = P(Z=0)·P(X=0). בדומה עבור שאר המקרים ו-Y. אבל נשים לב שהם תלויים ביחד: נניח כי ידוע i=X, j=Y — ניתן לדעת את i⊕j=Z. בדומה, נניח כי ידוע X=i, Z=j — נקבל כי Y=i⊕j."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "z^⊤Cz = z^⊤(∑_{i=1}^n x_i x_i^⊤)z = ∑_{i=1}^n z^⊤x_i x_i^⊤z = ∑_{i=1}^n (z^⊤x_i)(x_i^⊤z). מכיוון ש-z^⊤x_i סקלר, z^⊤x_i = x_i^⊤z, ולכן z^⊤Cz = ∑_{i=1}^n (z^⊤x_i)^2 ≥ 0."
+      },
+      "q2": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "סעיף א': כאשר d=1 מקבלים התפלגות נורמלית סטנדרטית (חד מימדית), כלומר σ=1 ולכן: P(−1 < X < 1) = Φ(1) − Φ(−1) = 0.8643 − 0.1587 = 0.7056. סעיף ב': לפי הרמז, אם ‖x‖ ≤ 1 אז ∀1≤i≤d: |x_i| ≤ 1 — עברנו ממעגל היחידה לקוביית יחידה. P(‖x‖ ≤ 1) ≤ P(|x_1| ≤ 1,...,|x_d| ≤ 1) = ∏_{i=1}^d P(−1 ≤ x_i ≤ 1) = 0.7056^d → 0 כש-d→∞."
+      },
+      "q3": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "נפתור משני הכיוונים: Var(y) = Var(w^⊤X) = Var(∑_{i=1}^d w_i X_i) = ∑_{i=1}^d w_i^2 Cov(X_i,X_i) + 2∑_{i<j} w_i w_j Cov(X_i,X_j) = ∑_{i=1}^d ∑_{j=1}^d w_i w_j Cov(X_i,X_j). w^⊤Cw = (∑_{i=1}^d w_i·Cov(X_1,X_i),...,∑_{i=1}^d w_i·Cov(X_d,X_i))·w = ∑_{i=1}^d w_i ∑_{j=1}^d w_j Cov(X_i,X_j) = Var(y)."
+      },
+      "q5": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "סעיף א': f(x) = {0 if ∑_{i=1}^d w_i·x_i ≥ 1; 1−∑_{i=1}^d w_i·x_i otherwise}. לכל נקודה מחוץ ל-E={x|w^⊤x=1} הפונקציה דיפרנציאבילית: ∂(1−w^⊤x)/∂x_i=−w_i, ∂0/∂x_i=0. עבור נקודות על E, הגבולות הכיווניים שונים ולכן f לא דיפ' שם. תחום: {x ∈ R^d | w^⊤x ≠ 1}. גרדיאנט: ∇f(x)=0 במקרה w^⊤x > 1, ∇f(x)=−w במקרה w^⊤x < 1. סעיף ב': הרכבה של פונקציות דיפ', דיפ' בכל מקום. ∂f/∂x_i = w_i·(1−f(x))f(x), ∇f(x) = w·(1−f(x))f(x)."
+      }
+    }
+  },
+  {
+    "student_name": "Uriel Dolev",
+    "student_id": "",
+    "score": 100,
+    "review": "שאלה 1: 25/25   שאלה 2: 25/25שאלה 3: 25/25   שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Discrete case: E[XY]=∑_x ∑_y xy·P(X=x,Y=y)=∑_x ∑_y xy·P(X=x)P(Y=y)=∑_x x·P(X=x) ∑_y y·P(Y=y)=E[X]·E[Y]. Continuous case: E[XY]=∫∫xy·fX,Y(x,y)dxdy=∫∫xy·fX(x)fY(y)dxdy=∫yfY(y)(∫xfX(x)dx)dy=∫xfX(x)dx ∫yfY(y)dy=E[X]·E[Y]. Since Cov(X,Y)=E[XY]−E[X]E[Y], Cov(X,Y)=0."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X take values in {−1,0,1} with equal probability P(X=−1)=P(X=0)=P(X=1)=1/3. Define Y=X^2. E[X]=0, E[Y]=2/3, E[XY]=E[X^3]=0. Therefore E[XY]=0=E[X]·E[Y], so X and Y are uncorrelated. However X and Y are not independent: P(X=0,Y=0)=1/3 ≠ P(X=0)·P(Y=0)=1/9."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X and Y be independent Bernoulli with P(X=0)=P(X=1)=1/2 and P(Y=0)=P(Y=1)=1/2. Define Z=X⊕Y. X,Y independent by definition. P(X=0,Z=0)=P(X=0,Y=0)=P(X=0)P(Y=0)=1/4=P(X=0)P(Z=0), so X,Z independent; similarly Y,Z independent. Z is determined by X,Y; Y=X⊕Z; X=Y⊕Z."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "z^T Cz = z^T(∑_{i=1}^n x_i x_i^T)z = ∑_{i=1}^n z^T x_i x_i^T z = ∑_{i=1}^n (z^T x_i)(x_i^T z). Since x_i^T z=(z^T x_i)^T and z^T x_i is a scalar, (z^T x_i)(x_i^T z)=(z^T x_i)^2. Therefore z^T Cz=∑_{i=1}^n (z^T x_i)^2 ≥ 0 (sum of non-negative squares)."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. P(−1 ≤ X ≤ 1) = ∫_{-1}^{1}(1/√(2π))e^{-x^2/2}dx = Φ(1)−Φ(−1) = 2Φ(1)−1 ≈ 0.6827. B. Let Bd={x: ‖x‖ ≤ 1} ⊆ Cd={x: |x_i| ≤ 1 for all i}. P(‖X‖ ≤ 1) ≤ P(X ∈ Cd) = ∏_{i=1}^d P(|X_i| ≤ 1) = p^d where p≈0.6827 < 1. Since 0 ≤ P(‖X‖ ≤ 1) ≤ p^d → 0, by squeeze theorem lim_{d→∞} P(‖X‖ ≤ 1) = 0."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let μ=E[X]. E[y]=w^T E[X]=w^T μ. Var(y)=E[(y−E[y])^2]=E[(w^T X−w^T μ)^2]=E[(w^T(X−μ))^2]. Since w^T(X−μ) is a scalar: Var(y)=E[(w^T(X−μ))((X−μ)^T w)]=w^T E[(X−μ)(X−μ)^T]w. Recognizing C=E[(X−μ)(X−μ)^T]: Var(y)=w^T Cw."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. Case w=0: f(0,x)=1 for all x, differentiable everywhere, gradient=0. Case w≠0: w^T x > 1: differentiable, gradient=0. w^T x < 1: differentiable, gradient=−w. Boundary w^T x=1: not differentiable (gradients 0 vs −w differ). Differentiable for all x with w^T x ≠ 1. ∇_x f(w,x)={0 if w^T x > 1; −w if w^T x < 1}. B. Differentiable for all x ∈ R^d. ∇_x f(x)=−(1+e^{−w^T x})^{-2}·e^{−w^T x}·(−w)=e^{−w^T x}/(1+e^{−w^T x})^2·w=f(x)(1−f(x))w."
+      }
+    }
+  },
+  {
+    "student_name": "Oren Chakon",
+    "student_id": "209231513",
+    "score": 98,
+    "review": "שאלה 1: 25/25   סעיף א': יש להתייחס למקרה הבדיד   שאלה 2: 25/25שאלה 3: 23/25 - יש להסביר יותר על המעברים.שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Assuming continuous random variables. By definition: fX,Y(x,y)=fX(x)·fY(y). E[XY]=∫∫xyfX,Y(x,y)dxdy=∫∫yfY(y)(xfX(x))dxdy=∫yfY(y)∫xfX(x)dxdy=∫yfY(y)E[X]dy=E[X]∫yfY(y)dy=E[X]E[Y]."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X, Y be two RV such that X ~ U(−1,1), Y = X^2. Obviously the RV are dependent. E[X]=0, E[Y]=E[X^2]=∫_{-1}^{1}x^2·(1/2)dx=1/3. E[XY]=E[X^3]=∫_{-1}^{1}x^3·(1/2)dx=0. We get E[XY]=E[X]E[Y]=0, thus the RV are uncorrelated."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X, Y be two discrete RV such that X,Y ~ U{0,1} and let Z=X⊕Y. X,Y are independent and knowing any two of the RV fixes the last one. X,Z are independent: Z's probability for 0 or 1 is 50% originally; given X, Z is still 0 or 1 with 50% as it depends only on Y. Given Z, X is still uniform since for any value of X, Y can be set such that X⊕Y=Z."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "z^T Cz = z^T ∑_{i=1}^n x_i x_i^T z = ∑_{i=1}^n z^T x_i x_i^T z = ∑_{i=1}^n (z^T x_i)·(z^T x_i)^T. Each number in the sum is a real number raised to the second power, always ≥ 0."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. X ~ N(0,1). P(1 > X > −1) = 2(P(X < 0)−P(X < −1)) ≈ 2(0.5−0.15866) = 0.6827. B. Each RV x_i has probability ~0.6827 to be bounded between −1 and 1. The unit sphere is inscribed inside the cube bounded by (1,1,...,1) and (−1,−1,...,−1). P of vector in cube = ∏_{i=1}^d P(−1 < x_i < 1). lim_{d→∞} ∏_{i=1}^d 0.6827 = 0. Since sphere ⊆ cube, P inside sphere is even lower."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Var(y) = E[(Y−E[Y])(Y−E[Y])^T] = E[(w^T X−E[w^T X])(w^T X−E[w^T X])^T] = E[(w^T(X−E[X]))(w^T(X−E[X]))^T] = w^T E[(X−E[X])(X−E[X])^T] w = w^T Cw."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. f(x)={0 if w^T x ≥ 1; 1−w^T x if w^T x < 1}. w^T x > 1: ∇f(x)=0. w^T x < 1: ∇f(x)=−w. Assuming w≠0, the function is not differentiable at w^T x=1. B. f(x)=1/(1+e^{−w^T x}). Composition of elementary functions, differentiable for all x. ∇f(x)=−1·e^{−w^T x}·(−w)/(1+e^{−w^T x})^2=(1/(1+e^{−w^T x}))·((1+e^{−w^T x})/(1+e^{−w^T x})−1/(1+e^{−w^T x}))·w=f(x)(1−f(x))w."
+      }
+    }
+  },
+  {
+    "student_name": "שירז מרים נווה",
+    "student_id": "318356474",
+    "score": 88,
+    "review": "שאלה 1: 25/25   סעיף א': יש להתייחס למקרה הבדיד   שאלה 2: 25/25שאלה 3: 25/25שאלה 5: 13/25 חסר מקרה וחסר הסבר בא', חסר פירוט דרך בב'",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Since X and Y are independent, their joint probability density function factorizes: E[XY]=∫∫xyfX,Y(x,y)dxdy. Using independence: E[XY]=∫xfX(x)dx·∫yfY(y)dy=E[X]E[Y]. Thus Cov(X,Y)=E[XY]−E[X]E[Y]=0."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X be uniform on [−1,1] and define Y=X^2. E[X]=∫_{-1}^{1}x·(1/2)dx=0. E[XY]=E[X^3]=∫_{-1}^{1}x^3·(1/2)dx=0. Since E[X]E[Y]=0·E[X^2]=0, X and Y are uncorrelated. However they are not independent since Y is completely determined by X."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Let X, Y be independent fair coin flips (±1 with equal probability), and define Z=XY. P(X=1,Y=1)=1/4=P(X=1)P(Y=1), so X and Y are independent. P(X=1,Z=1)=P(X=1,Y=1)+P(X=1,Y=−1)=1/2=P(X=1)P(Z=1), so X and Z are independent. Similar calculations show Y and Z are independent. But knowing X and Y determines Z=XY."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "C=∑_{i=1}^n x_i x_i^⊤. For any vector z ∈ R^d: z^⊤Cz=∑_{i=1}^n (x_i^⊤ z)^2 ≥ 0. Since it is a sum of squares, C is positive semi-definite."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. For X ~ N(0,1): P(−1 ≤ X ≤ 1)=Φ(1)−Φ(−1). Φ(1)≈0.8413, Φ(−1)≈0.1587. P(−1 ≤ X ≤ 1)=0.8413−0.1587=0.6826. B. X ~ N(0,Id), each coordinate Xi ~ N(0,1) independently. P(x ∈ Bd) ≤ P(x ∈ [−1,1]^d) = ∏_{i=1}^d P(xi ∈ [−1,1])=(0.6826)^d. As d→∞, (0.6826)^d → 0 exponentially fast."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Given y=w^⊤X: Var(y)=E[(w^⊤X−w^⊤E[X])^2]. Expanding: Var(y)=E[w^⊤(X−E[X])(X−E[X])^⊤w]. Factoring: Var(y)=w^⊤E[(X−E[X])(X−E[X])^⊤]w=w^⊤Cw."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. f(w,x)={0 if w^⊤x ≥ 1; 1−w^⊤x otherwise}. Gradient: ∇_x f(x)={−w if w^⊤x < 1; undefined if w^⊤x=1}. (Differentiability range not explicitly stated in submission.) B. f(x)=1/(1+e^{−w^⊤x}). Derivative: ∇_x f(x)=e^{−w^⊤x}·w/(1+e^{−w^⊤x})^2. Rewriting: ∇_x f(x)=f(x)(1−f(x))w."
+      }
+    }
+  },
+  {
+    "student_name": "רואי עזר",
+    "student_id": "",
+    "score": 100,
+    "review": "",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Cov(x,y)=E[(X−μx)(Y−μy)]=∑_x ∑_y P(X=x,Y=y)·(x−μx)(y−μy). Since independent: =∑_x P(X=x)·(x−μx)·∑_y P(Y=y)(y−μy). ∑_x P(X=x)·(x−μx)=E[X]−μx·1=E[X]−E[X]=0. Therefore Cov(x,y)=0·∑_y P(Y=y)(y−μy)=0."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "X ~ N(0,1), Y=X^2. Trivially X,Y are not independent. Cov(X,Y)=Cov(X,X^2)=E[X^3]−E[X]·E[X^2]. E[X]=0, E[X^2]=1, E[X^3]=0 (odd function over symmetric interval). Therefore Cov(X,Y)=0−0·1=0. Hence X and Y are uncorrelated."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "X,Y independent with P(X=0)=P(X=1)=0.5, P(Y=0)=P(Y=1)=0.5, Z=XOR(X,Y). P(Z=0)=P(Z=1)=0.5. P(X=0,Z=0)=P(Z=0|X=0)·P(X=0)=P(Y=1)·0.5=0.25=P(X=0)·P(Z=0). Identical proofs for P(X=1,Z=0), P(X=0,Z=1), P(X=1,Z=1) and similarly for Y,Z."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "z^⊤Cz=z^⊤(∑_{i=1}^n x_i x_i^⊤)z=∑_{i=1}^n z^⊤x_i x_i^⊤z. Note z^⊤x_i is a scalar: z^⊤x_i x_i^⊤z=(z^⊤x_i)(x_i^⊤z)=(x_i^⊤z)^2 ≥ 0. Therefore z^⊤Cz=∑_{i=1}^n (x_i^⊤z)^2 ≥ 0."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. X ~ N(0,1). P(−1 ≤ X ≤ 1)=∫_{-1}^{1}(1/√(2π))e^{-x^2/2}dx=φ(1)−φ(−1)≈0.68. B. Lemma: ‖X‖ ≤ 1 → ∀1≤i≤d: −1 ≤ x_i ≤ 1 (by contradiction: if |x_j|>1 then ‖X‖≥|x_j|>1). Therefore P(‖X‖ ≤ 1) ≤ P(∩_{i=1}^d{−1 ≤ x_i ≤ 1})=∏_{i=1}^d P(−1 ≤ x_i ≤ 1)=(φ(1)−φ(−1))^d≈(0.68)^d → 0. Therefore P(‖X‖ ≤ 1) → 0."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Var(y)=E[(y−E[y])^2]=E[(w^⊤X−E[w^⊤X])^2]. E[w^⊤X]=w^⊤E[X]. Var(y)=E[(w^⊤(X−E[X]))^2]=E[(w^⊤(X−E[X]))(w^⊤(X−E[X]))^⊤]=E[w^⊤(X−E[X])(X−E[X])^⊤w]=w^⊤E[(X−E[X])(X−E[X])^⊤]w=w^⊤Cw."
+      },
+      "q5": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. Differentiable in regions w^⊤x > 1 and w^⊤x < 1; not differentiable at w^⊤x=1 (gradient changes from 0 to −w). ∇f(w,x)={0 if w^⊤x ≥ 1; −w if w^⊤x < 1}. B. Sigmoid differentiable everywhere in R^d. σ(z)=1/(1+e^{-z}), σ'(z)=e^{-z}/(e^{-z}+1)^2=σ(z)(1−σ(z)). Since z=w^⊤x: ∇f(x)=σ(w^⊤x)(1−σ(w^⊤x))·w=f(x)(1−f(x))w."
+      }
+    }
+  },
+  {
+    "student_name": "שחר שיפרוט",
+    "student_id": "",
+    "score": 91,
+    "review": "שאלה 1: 23/25   סעיף ד': יש לספק יותר הסברים / הצדקה למעברים (-2)      שאלה 2: 20/25   חסרים הסברים על החישובים - מדוע הם נכונים ומוצאים את מה שביקשו?שאלה 3: 23/25 - יש להסביר יותר על המעברים.   שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "נניח את המקרה הרציף והמקרה הבדיד זהה פשוט צריך להחליף את האינטגרל בסכום. בנוסף בעזרת אנליזה מודרנית ניתן להתייחס לסכום כאינטגרל עם פונקציית מידה מתאימה. E[XY] = ∫_R xP(XY=x)dx = ∫_R x ∫_R P(X=x/y, Y=y) dydx = ∫_R x ∫_R P(X=x/y)P(Y=y) dydx = ∫_R ∫_R xyP(X=x)P(Y=y) dydx = ∫_R xP(X=x)dx ∫_R yP(Y=y)dy = E[X]E[Y]. כדרוש."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "נגדיר X ∼ U(−1,1) ו-Y = X^2, ברור שהם תלויים אבל: E[XY] = E[X^3] = 0 = 0·E[Y] = E[X]E[Y]. כדרוש."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "נגדיר X, Y ∼ U{0,1} בת\"ל ו-Z = 1_{X≠Y} כלומר 0 אם הם שווים ו-1 אחרת. ברור שכל שתיים נותנים את השלישי (לדוגמה בעזרת חיבור מודולו 2). P(X=0,Z=0)=P(X=0,Y=0)=P(X=0)P(Y=0)=1/4; P(X=1,Z=0)=P(X=1,Y=1)=P(X=1)P(Y=1)=1/4; P(X=0,Z=1)=P(X=0,Y=1)=P(X=0)P(Y=1)=1/4; P(X=1,Z=1)=P(X=1,Y=0)=P(X=1)P(Y=0)=1/4. נשים לב שגם Z ∼ U{0,1} ולכן P(X=x)P(Z=z)=1/4, כלומר X,Z בת\"ל ולכן בה\"כ גם Y,Z בת\"ל."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "z^T Cz = z^T(∑_{i=1}^n x_i x_i^T)z = ∑_{i=1}^n (z^T x_i)(z^T x_i)^T = ∑_{i=1}^n ‖z^T x_i‖^2 ≥ 0. שכן סכום של אי-שליליים הוא גם אי-שלילי."
+      },
+      "q2": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "סעיף A: P(−1 ≤ X ≤ 1) = 1 − 2P(X > 1) = 1 − Φ(1) = 1 − 2·0.159 = 0.683 (חושב בעזרת טבלת Z). סעיף B: P(‖X‖ ≤ 1) ≤ P(∀i: |x_i| ≤ 1) = ∏_{i=1}^d P(|x_i| ≤ 1) = 0.683^d. שכמובן שואף לאפס כש-d→∞ ולכן גם lim_{d→∞} P(‖X‖ ≤ 1) = 0."
+      },
+      "q3": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "Var(y) = E[(y−E[y])^2] = E[y^2] − E[y]^2. E[y^2] = E[(w^T X)(w^T X)^T] = E[w^T XX^T w] = w^T E[XX^T]w. E[y]^2 = (w^T E[X])^2 = w^T E[X]E[X]^T w. לכן: Var(y) = w^T(E[XX^T] − E[X]E[X]^T)w = w^T Cw. שכן C = E[(X−E[X])(X−E[X])^T] = E[XX^T] − E[X]E[X]^T."
+      },
+      "q5": {
+        "present": true,
+        "language": "Hebrew",
+        "extraction_status": "ok",
+        "answer_text": "סעיף א': f(x)={0 if w^T x ≥ 1; 1−w^T x o.w.}. נשים לב שזו הרכבה: f=(x↦max(1−x,0))∘(x↦w^T x). ∇f(x) מוגדר ב-{x ∈ R^d | w^T x ≠ 1} ושם: ∇f(x)={0 if w^T x > 1; −w if w^T x < 1}. סעיף ב': f(x)=1/(1+e^{−w^T x}). נשים לב שזו הרכבה: f=(x↦1/(1+e^{-x}))∘(x↦w^T x). ∇f(x)=e^{−w^T x}/(1+e^{−w^T x})^2·w=f(x)(1−f(x))w."
+      }
+    }
+  },
+  {
+    "student_name": "ישעיה בנימין ברקוביץ קריגמן",
+    "student_id": "",
+    "score": 83,
+    "review": "שאלה 1: 23/25   סעיף א': יש להתייחס למקרה הבדיד   סעיף ד': חסר הצדקות/הסברים למעברים, ולספק נימוק לכל טענה שנרשמת (-2)   שאלה 2: 15/25   סעיף ב: הרעיון נכון אבל צריך להסביר את זה בצורה פורמלית (אפשר להראות שזה שואף ל-0 בעזרת סנדוויץ)שאלה 3: 20/25 - חסרים מספר מעברים בדרך לתשובה הסופית.   שאלה 5: 25/25",
+    "answers": {
+      "q1_1": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "E[XY] = ∫∫XYfXY(X,Y)dXdY = ∫∫XYfX(X)fY(Y)dXdY (by independence) = ∫XfX(X)dX ∫YfY(Y)dY = E[X]E[Y]."
+      },
+      "q1_2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Take X ~ Unif(−1,1) and Y=X^2. Their linear relationships on either side of 0 cancel out: E[XY]=E[X^3]=0 and E[X]E[Y]=0·E[Y]=0."
+      },
+      "q1_3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "X, Y are each independent fair coin flips and Z is the XOR function over them. Knowing any two determines the third. X and Z are independent: P(Z=1,X=1)=P(Z=1|X=1)·P(X=1)=0.5·0.5=P(Z=1)·P(X=1)."
+      },
+      "q1_4": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "C=XX^⊤. z^⊤XX^⊤z=(X^⊤z)^⊤X^⊤z=∑(squares) ≥ 0."
+      },
+      "q2": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "A. pnorm(1) - pnorm(-1) = 0.6826895. B. Given Σ=Id, components are independent. We are within one unit of 0 when ∑_{i=1}^d X_i^2 ≤ 1. Z=∑_{i=1}^d X_i^2 ~ Chisq(d). As d increases the density of Z gets pushed more and more positive. It is very unlikely that a sum of very many squared standard normals would be small. The higher d the lower the probability."
+      },
+      "q3": {
+        "present": true,
+        "language": "English",
+        "extraction_status": "ok",
+        "answer_text": "Var(y) = Var(∑ w_i X_i) = ∑_{i,j=1} Cov(w_i X_i, w_j X_j) = ∑_{i,j=1} w_i w_j Cov(X_i,X_j) = w^⊤Cw."
+      },
+      "q5": {
+        "present": false,
+        "language": "",
+        "extraction_status": "ok",
+        "answer_text": ""
+      }
+    }
+  }
+]

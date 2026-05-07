@@ -1,0 +1,38 @@
+{
+  "exam_id": "exam_ml_2024_01",
+  "question": "Explain the concept of gradient descent in machine learning, including the update rule and convergence conditions.",
+  "expected_key_points": [
+    "Update parameters in the direction of the negative gradient",
+    "Learning rate alpha controls the step size",
+    "Converges to a local minimum (global for convex functions)",
+    "Loss function is minimized iteratively"
+  ],
+  "students": [
+    {
+      "student_id": "s001",
+      "name": "Alice Cohen",
+      "file": "https://drive.google.com/file/d/REPLACE_WITH_REAL_FILE_ID/view?usp=sharing",
+      "metadata": {
+        "section": "A",
+        "submission_time": "2024-01-15T10:30:00Z"
+      }
+    },
+    {
+      "student_id": "s002",
+      "name": "Bob Levi",
+      "file": "/path/to/local/bob_answer.mp4",
+      "metadata": {
+        "section": "A",
+        "submission_time": "2024-01-15T10:45:00Z"
+      }
+    },
+    {
+      "student_id": "s003",
+      "name": "Carol Mizrahi",
+      "file": "https://drive.google.com/file/d/REPLACE_WITH_REAL_FILE_ID_3/view",
+      "metadata": {
+        "section": "B"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "anchors": [
+    {
+      "level": "excellent",
+      "description": "Mathematically precise, complete, and well-organized answer",
+      "answer": "Gradient descent is an iterative optimization algorithm used to minimize a loss function. The core idea is to update the model parameters in the direction of the negative gradient of the loss. The update rule is θ = θ minus α times the gradient of L with respect to θ, where α is the learning rate. The learning rate controls how large each step is — if it's too large we may overshoot the minimum and diverge; too small and convergence is very slow. For convex loss functions, gradient descent is guaranteed to converge to the global minimum. For non-convex functions, it converges to a local minimum. Variants like stochastic gradient descent use a single sample or mini-batch per update step to make the algorithm more scalable.",
+      "score": 95
+    },
+    {
+      "level": "adequate",
+      "description": "Correct main idea but missing formal details or convergence discussion",
+      "answer": "Gradient descent is how we train machine learning models. We compute the gradient of the loss function and update the weights in the opposite direction. The learning rate determines how big the steps are. We keep doing this until the loss stops decreasing.",
+      "score": 62
+    },
+    {
+      "level": "poor",
+      "description": "Vague or partially incorrect understanding",
+      "answer": "Gradient descent is a way to make the neural network learn. It adjusts the weights based on the errors. You run it many times until the network gets better.",
+      "score": 22
+    }
+  ]
+}
